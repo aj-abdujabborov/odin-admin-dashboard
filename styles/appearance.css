@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,100;1,300&display=swap');
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+/* Sidebar */
 .sidebar {
     background-color: #4590CE;
 }
@@ -8,10 +20,7 @@
     margin: 0;
 }
 
-.main {
-    background-color: #E3E8EF;
-}
-
+/* Header */
 .search-bar {
     background-color: #E3E8EF;
 }
@@ -19,4 +28,21 @@
 .profile-photo {
     border: 3px solid black;
     border-radius: 50%;
+}
+
+/* Main */
+.main {
+    background-color: #E3E8EF;
+    padding: 10px 50px;
+}
+
+.projects > .card {
+    background-color: white;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.projects > .card > div.border {
+    width: 7px;
+    background-color: #E7B64A;
 }

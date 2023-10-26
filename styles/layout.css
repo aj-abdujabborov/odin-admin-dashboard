@@ -89,13 +89,14 @@ img.large.profile-photo {
 .main {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 20px;
 }
 
 .main h3:first-child {
     grid-column: 1 / -1;
 }
 
-.main > .projects {
+.projects {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
 
@@ -103,34 +104,65 @@ img.large.profile-photo {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: min-content 1fr;
     grid-auto-rows: 1fr;
+    gap: 20px;
 }
 
-.main > .announcements {
+.projects > .card {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content auto min-content;
+}
+
+.projects > .card > .border {
+    grid-row: 1 / -1;
+}
+
+.projects > .card > *:not(.border) {
+    padding: 0 30px;
+}
+
+.projects > .card > h3 {
+    margin: 35px 0 0 0;
+}
+
+.projects > .card > div.options {
+    justify-self: end;
+    margin: 20px 0;
+}
+
+.projects > .card > div.options > img {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 10px;
+}
+
+
+.announcements {
     grid-column: 2 / 3;
     grid-row: 1 / 2;    
 }
 
-.main > .announcements > .news-container {
+.announcements > .news-container {
     display: flex;
     flex-direction: column;
 }
 
-.main > .trending {
+.trending {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
 
-.main > .trending > .user-container {
+.trending > .user-container {
     display: flex;
     flex-direction: column;
 }
 
-.main > .trending .user {
+.trending .user {
     display: grid;
     grid-template-columns: min-content auto;
     grid-template-rows: min-content auto;
 }
 
-.main > .trending .user > .profile-photo {
+.trending .user > .profile-photo {
     grid-row: 1 / 3;
 }
