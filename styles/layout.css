@@ -1,8 +1,9 @@
 :root {
     --main-gap-size: 20px;
+    --big-icon-size: 3em;
     --small-icon-size: 1.5em;
-    --small-profile-size: 2em;
     --large-profile-size: 4em;
+    --small-profile-size: 2em;
 }
 
 * {
@@ -46,6 +47,11 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+.sidebar img {
+    width: var(--big-icon-size);
+    height: var(--big-icon-size);
 }
 
 .sidebar img:not(:first-child) {
