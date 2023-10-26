@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,100;1,300&display=swap');
 
+:root {
+    --card-border-radius: 14px;
+}
+
 html {
     font-family: 'Lato', sans-serif;
 }
@@ -38,11 +42,24 @@ h1, h2, h3, h4 {
 
 .projects > .card {
     background-color: white;
-    border-radius: 14px;
+    border-radius: var(--card-border-radius);
     overflow: hidden;
 }
 
 .projects > .card > div.border {
     width: 7px;
     background-color: #E7B64A;
+}
+
+.announcements > .news-container {
+    background-color: white;
+    border-radius: var(--card-border-radius);
+}
+
+.announcements > .news-container > .news {
+    border-bottom: 1px solid #00000030;
+}
+
+.announcements > .news-container > .news:last-child {
+    border-bottom: none;
 }
