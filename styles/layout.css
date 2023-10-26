@@ -94,6 +94,8 @@ img.large.profile-photo {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: var(--main-gap-size);
+
+    padding: 10px 50px;
 }
 
 .main h3:first-child {
@@ -145,31 +147,39 @@ img.large.profile-photo {
     grid-row: 1 / 2;    
 
     display: grid;
-    grid-template-rows: min-content min-content;
+    grid-template-rows: min-content 1fr;
     gap: var(--main-gap-size);
 }
 
 .announcements > .news-container {
     display: flex;
     flex-direction: column;
-    padding: 20px 30px;
+    padding: 20px 20px;
 }
 
 
 .trending {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    align-self: end;
+
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    gap: var(--main-gap-size);
 }
 
 .trending > .user-container {
     display: flex;
     flex-direction: column;
+    padding: 20px 20px;
+    gap: 15px;
 }
 
 .trending .user {
     display: grid;
     grid-template-columns: min-content auto;
     grid-template-rows: min-content auto;
+    column-gap: 15px;
 }
 
 .trending .user > .profile-photo {

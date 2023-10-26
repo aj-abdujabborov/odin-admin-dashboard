@@ -37,7 +37,6 @@ h1, h2, h3, h4 {
 /* Main */
 .main {
     background-color: #E3E8EF;
-    padding: 10px 50px;
 }
 
 .projects > .card {
@@ -62,4 +61,9 @@ h1, h2, h3, h4 {
 
 .announcements > .news-container > .news:last-child {
     border-bottom: none;
+}
+
+.trending > .user-container {
+    background-color: white;
+    border-radius: var(--card-border-radius);
 }
