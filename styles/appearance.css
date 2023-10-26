@@ -2,6 +2,7 @@
 
 :root {
     --card-border-radius: 14px;
+    --button-border-radius: 20px;
 }
 
 html {
@@ -27,11 +28,22 @@ h1, h2, h3, h4 {
 /* Header */
 .search-bar {
     background-color: #E3E8EF;
+    border-radius: var(--card-border-radius);
 }
 
 .profile-photo {
-    border: 3px solid black;
+    background-color: #62adea;
     border-radius: 50%;
+}
+
+.headerbottom > button {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    background-color: #4590CE;
+    border: none;
+    border-radius: var(--button-border-radius);
+
 }
 
 /* Main */

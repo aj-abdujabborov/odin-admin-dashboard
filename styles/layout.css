@@ -1,5 +1,8 @@
 :root {
     --main-gap-size: 20px;
+    --small-icon-size: 1.5em;
+    --small-profile-size: 2em;
+    --large-profile-size: 4em;
 }
 
 * {
@@ -46,42 +49,48 @@
 }
 
 .sidebar > ul > li > img {
-    width: 1.5em;
-    height: 1.5em;
+    width: var(--small-icon-size);
+    height: var(--small-icon-size);
 }
 
 /* Header */
+.header {
+    padding: 10px 30px;
+}
+
 .headertop {
     display: flex;
+    gap: 10px;
     align-items: center;
     justify-content: space-between;
 }
 
 .headertop img {
-    width: 1em;
-    height: 1em;
+    width: var(--small-icon-size);
+    height: var(--small-icon-size);
 }
 
 .headertop > .search-bar {
     flex-grow: 1;
-    margin: 0 10px;
+    margin-right: 30px;
     height: 25px;
 }
 
 img.small.profile-photo {
-    height: 2.5em;
-    width: 2.5em;
+    height: var(--small-profile-size);
+    width: var(--small-profile-size);
 }
 
 img.large.profile-photo {
-    height: 5em;
-    width: 5em;
+    height: var(--large-profile-size);
+    width: var(--large-profile-size);
 }
 
 .headerbottom {
     display: grid;
     grid-template-columns: min-content auto repeat(3, min-content);
     align-items: center;
+    gap: 20px;
 }
 
 .headerbottom > button {
@@ -95,7 +104,7 @@ img.large.profile-photo {
     grid-template-columns: 3fr 1fr;
     gap: var(--main-gap-size);
 
-    padding: 10px 50px;
+    padding: 10px 20px;
 }
 
 .main h3:first-child {
@@ -137,8 +146,8 @@ img.large.profile-photo {
 }
 
 .projects > .card > div.options > img {
-    width: 1.5em;
-    height: 1.5em;
+    width: var(--small-icon-size);
+    height: var(--small-icon-size);
     margin: 0 10px;
 }
 
