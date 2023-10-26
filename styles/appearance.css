@@ -1,4 +1,17 @@
-p { 
-    font-size: 100px;
-    color: white;
+.sidebar {
+    background-color: #4590CE;
+}
+
+.sidebar ul, .sidebar li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    background-color: #E3E8EF;
+}
+
+.search-bar {
+    background-color: #E3E8EF;
 }
