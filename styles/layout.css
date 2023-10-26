@@ -28,21 +28,19 @@
 
 /* Sidebar */
 .sidebar {
-    display: grid;
-    grid-template-rows: repeat(3, min-content) 1fr;
-    align-content: start;
-    gap: 40px;
     padding: 10px;
-}
-
-.sidebar > .title {
-    display: flex;
+    
+    display: grid;
+    grid-template-columns: 3em 1fr;
+    grid-template-rows: min-content 30px repeat(6, min-content) 30px repeat(3, min-content) 1fr;
+    align-content: start;
     align-items: center;
+    row-gap: 20px;
+    column-gap: 5px;
 }
 
-.sidebar > .title > img {
-    width: 3em;
-    height: 3em;
+.sidebar > div.gutter {
+    grid-column: 1 / -1;
 }
 
 .sidebar ul, .sidebar li {
@@ -51,19 +49,16 @@
     margin: 0;
 }
 
-.sidebar > ul > li {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.sidebar > ul > li > img {
+.sidebar img:not(:first-child) {
     width: var(--small-icon-size);
     height: var(--small-icon-size);
+
+    align-self: center;
+    justify-self: center;
 }
 
 .sidebar > ul.credits {
+    grid-column: 1 / -1;
     align-self: end;
 }
 
