@@ -10,7 +10,6 @@ html {
 }
 
 h1, h2, h3, h4 {
-    font-weight: 700;
     margin: 10px 0;
 }
 
@@ -19,6 +18,14 @@ h1, h2, h3, h4 {
     background-color: #4590CE;
     color: white;
     font-weight: 700;
+}
+
+.sidebar h2 {
+    font-size: 2em;
+}
+
+.sidebar span {
+    font-size: 1.3em;
 }
 
 /* Header */
@@ -39,7 +46,18 @@ h1, h2, h3, h4 {
     background-color: #4590CE;
     border: none;
     border-radius: var(--button-border-radius);
+}
 
+.headerbottom > .greeting {
+    font-weight: 700;
+}
+
+.headerbottom > .greeting > * {
+    margin: 5px 0;
+}
+
+.headerbottom > .greeting > span {
+    font-size: 0.8em;
 }
 
 /* Main */
@@ -47,6 +65,7 @@ h1, h2, h3, h4 {
     background-color: #E3E8EF;
 }
 
+/* Projects */
 .projects > .card {
     background-color: white;
     border-radius: var(--card-border-radius);
@@ -58,6 +77,7 @@ h1, h2, h3, h4 {
     background-color: #E7B64A;
 }
 
+/* Announcements */
 .announcements > .news-container {
     background-color: white;
     border-radius: var(--card-border-radius);
@@ -71,7 +91,20 @@ h1, h2, h3, h4 {
     border-bottom: none;
 }
 
+.announcements h4 {
+    font-size: .8em;
+}
+
+.announcements p {
+    font-size: .8em;
+}
+
+/* Trending */
 .trending > .user-container {
     background-color: white;
     border-radius: var(--card-border-radius);
+}
+
+.trending span {
+    font-size: 0.8em;
 }
