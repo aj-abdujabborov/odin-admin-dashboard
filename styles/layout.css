@@ -26,6 +26,26 @@
     gap: 40px;
 }
 
+.sidebar > .title {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar > .title > img {
+    width: 3em;
+    height: 3em;
+}
+
+.sidebar > ul > li {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar > ul > li > img {
+    width: 1.5em;
+    height: 1.5em;
+}
+
 /* Header */
 .headertop {
     display: flex;
@@ -33,14 +53,36 @@
     justify-content: space-between;
 }
 
+.headertop img {
+    width: 1em;
+    height: 1em;
+}
+
 .headertop > .search-bar {
     flex-grow: 1;
     margin: 0 10px;
+    height: 25px;
+}
+
+img.small.profile-photo {
+    height: 2.5em;
+    width: 2.5em;
+}
+
+img.large.profile-photo {
+    height: 5em;
+    width: 5em;
 }
 
 .headerbottom {
     display: grid;
-    grid-template-columns: auto auto repeat(3, 100px);
+    grid-template-columns: min-content auto repeat(3, min-content);
+    align-items: center;
+}
+
+.headerbottom > button {
+    height: 40px;
+    width: 100px;
 }
 
 /* Main Grid */
@@ -83,3 +125,12 @@
     flex-direction: column;
 }
 
+.main > .trending .user {
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-template-rows: min-content auto;
+}
+
+.main > .trending .user > .profile-photo {
+    grid-row: 1 / 3;
+}

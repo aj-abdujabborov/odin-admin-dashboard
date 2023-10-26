@@ -15,3 +15,8 @@
 .search-bar {
     background-color: #E3E8EF;
 }
+
+.profile-photo {
+    border: 3px solid black;
+    border-radius: 50%;
+}
